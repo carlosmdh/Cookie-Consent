@@ -1,0 +1,422 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2018-05-10 17:30:01",
+    "containerVersion": {
+        "path": "accounts/1816904851/containers/7566974/versions/0",
+        "accountId": "1816904851",
+        "containerId": "7566974",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/1816904851/containers/7566974",
+            "accountId": "1816904851",
+            "containerId": "7566974",
+            "name": "www.lanavajadeoccam.net",
+            "publicId": "GTM-5SL93TZ",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1525967704250",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1816904851/containers/7566974/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "tagId": "53",
+                "name": "cookiepermission - ask",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  function setCookie(value, box) {\n    var d = new Date();\n    d.setTime(d.getTime() + ({{cookiepermission - expiry}}*24*60*60*1000));\n    var expires = \"expires=\"+ d.toUTCString();\n    document.cookie = '{{cookiepermission - cookiename}}' + \"=\" + value + \"; \" + expires;\n    \n    // remove box\n    box.style.display = 'none';\n    \n    if (value == \"yes\")\n       dataLayer.push( { event: 'cookiepermission first page yes' } );\n    else\n       dataLayer.push( { event: 'cookiepermission first page no' } );\n    \n  }\n  \n  var txt = \"{{cookiepermission - Pregunta}}\";\n  var cookiepermissionDialogbox = document.createElement(\"div\");\n  cookiepermissionDialogbox.id = 'cp-overlay';\n  cookiepermissionDialogbox.style.position = \"fixed\";\n  cookiepermissionDialogbox.style.bottom = \"0px\";\n//cookiepermissionDialogbox.style.top = \"0px\";\n  cookiepermissionDialogbox.style.width = \"100%\";\n//cookiepermissionDialogbox.style.height = \"0%\";\n  cookiepermissionDialogbox.style.zIndex = \"1000\";\n//cookiepermissionDialogbox.style.zIndex = \"999999\";\n  cookiepermissionDialogbox.style.backgroundColor = \"rgba(0, 0, 0, 0.5)\";\n    \n  cpdiv = document.createElement(\"div\");\n  cpdiv.id = 'cp-inner';\n  cpdiv.style.textAlign = \"center\";\n  cpdiv.style.backgroundColor = \"white\";\n  cpdiv.style.margin = \"auto\";\n  cpdiv.style.width = \"100%\"; // cubre todo el ancho de página - cover all the witdh\n  cpdiv.style.padding = \"10px\"; // ajusta el padding - reduce box size\n  cpdiv.style.opacity = \"0.8\";  // ajusta la opacidad del fondo de la caja - change box opacity\n  \n  cpQuestion = document.createElement(\"p\"); // ajusta el tamaño del texto del mensaje\n  cpQuestion.id = 'cp-question';\n  cpQuestion.style.textAlign = \"center\";\n  cpQuestion.innerHTML = txt;\n  \n  cpOptiondiv = document.createElement(\"div\");\n  cpOptiondiv.id = 'cp-options';\n  cpOptiondiv.style.textAlign = \"center\";\n  \n  cpSep = document.createElement(\"span\");\n  cpSep.class = \"cp-separator\";\n  cpSep.innerHTML = '&nbsp;-&nbsp;';\n\n  cpSep2 = document.createElement(\"span\");\n  cpSep2.class = \"cp-separator2\";\n  cpSep2.innerHTML = '&nbsp;-&nbsp;';\n  \n  cpYes = document.createElement(\"span\");\n  cpYes.id = \"cp-yes\";\n  \n  cpYesA = document.createElement(\"a\");\n  cpYesA.setAttribute(\"href\", \"#\");\n  cpYesA.setAttribute(\"onclick\", \"javascript:setCookie('yes', cookiepermissionDialogbox);\");\n  cpYesA.innerHTML = '{{cookiepermission - texto venga va enchufalas}}';\n  \n  cpNo = document.createElement(\"span\");\n  cpNo.id = \"cp-no\";\n  \n  cpNoA = document.createElement(\"a\");\n  cpNoA.setAttribute(\"href\", \"#\");\n  cpNoA.setAttribute(\"onclick\", \"javascript:setCookie('no', cookiepermissionDialogbox);\");\n  cpNoA.innerHTML = '{{cookiepermission - Texto va a ser que no}}';\n\n  cpPolitica = document.createElement(\"spam\");\n  cpPolitica.id = \"cp-politica\";\n  \n  // Añade el enlace a la página de Politica de Coockies (MODIFICAR LA URL)\n  cpPoliticaA = document.createElement(\"a\");\n  cpPoliticaA.setAttribute(\"href\", \"https://consultoria365.com/politica-de-cookies/\");\n  cpPoliticaA.innerHTML = '{{cookiepermission - Politica de Cookies}}';\n  \n  // insert into body \n  document.body.appendChild(cookiepermissionDialogbox);\n  \n  cookiepermissionDialogbox.appendChild(cpdiv);\n\n  cpdiv.appendChild(cpQuestion);\n  cpdiv.appendChild(cpOptiondiv);\n  cpOptiondiv.appendChild(cpYes);\n  cpOptiondiv.appendChild(cpSep);\n  cpOptiondiv.appendChild(cpNo);\n  cpOptiondiv.appendChild(cpSep2);\n  cpOptiondiv.appendChild(cpPolitica);\n  cpYes.appendChild(cpYesA);\n  cpNo.appendChild(cpNoA);\n  cpPolitica.appendChild(cpPoliticaA);\n  \n</script>\n  "
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1525973224753",
+                "firingTriggerId": [
+                    "157"
+                ],
+                "parentFolderId": "80",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "tagId": "54",
+                "name": "cookiepermission SAMPLE Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  console.log(\"Visitor says yes\");\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1525966656669",
+                "firingTriggerId": [
+                    "158",
+                    "155"
+                ],
+                "parentFolderId": "80",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "triggerId": "154",
+                "name": "cookiepermission - firstpage no",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "cookiepermission first page no"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1525966656662",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "triggerId": "155",
+                "name": "cookiepermission - firstpage yes",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "cookiepermission first page yes"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1525966656663",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "triggerId": "156",
+                "name": "cookiepermission - no",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{cookiepermission - content}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "no"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1525966656664",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "triggerId": "157",
+                "name": "cookiepermission - unknown",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{cookiepermission - content}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "yes|no"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1525966656664",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "triggerId": "158",
+                "name": "cookiepermission - yes",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{cookiepermission - content}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "yes"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1525966656665",
+                "parentFolderId": "80"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "47",
+                "name": "cookiepermission - Acepta",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Acepto"
+                    }
+                ],
+                "fingerprint": "1525966656665",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "48",
+                "name": "cookiepermission - No acepta",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "No acepto"
+                    }
+                ],
+                "fingerprint": "1525966656666",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "49",
+                "name": "cookiepermission - Politica de Cookies",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Política de Cookies"
+                    }
+                ],
+                "fingerprint": "1525973361850",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "50",
+                "name": "cookiepermission - Pregunta",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Utilizamos cookies de terceros, de servicios de análisis, afiliación o redes sociales. Si continua navegando, acepta su uso. Puede cambiar la configuración u obtener más información consultando la Política de Cookies"
+                    }
+                ],
+                "fingerprint": "1525966656666",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "51",
+                "name": "cookiepermission - Texto pregunta",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Utilizamos cookies de terceros, de servicios de análisis, afiliación o redes sociales. Si continua navegando, acepta su uso. Puede cambiar la configuración u obtener más información consultando la Política de Cookies"
+                    }
+                ],
+                "fingerprint": "1525966656666",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "52",
+                "name": "cookiepermission - Texto va a ser que no",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "No acepto"
+                    }
+                ],
+                "fingerprint": "1525966656667",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "45",
+                "name": "cookiepermission - content",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "{{cookiepermission - cookiename}}"
+                    }
+                ],
+                "fingerprint": "1525966656664",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "44",
+                "name": "cookiepermission - cookiename",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "cookiepermission"
+                    }
+                ],
+                "fingerprint": "1525966656663",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "53",
+                "name": "cookiepermission - expiry",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "365"
+                    }
+                ],
+                "fingerprint": "1525973385650",
+                "parentFolderId": "80"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "54",
+                "name": "cookiepermission - texto venga va enchufalas",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Acepto"
+                    }
+                ],
+                "fingerprint": "1525966656667",
+                "parentFolderId": "80"
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "folderId": "80",
+                "name": "cookiepermission",
+                "fingerprint": "1521463998221"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1816904851/containers/7566974/versions/0?apiLink=version"
+    }
+}
