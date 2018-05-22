@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2018-05-10 17:30:01",
+    "exportTime": "2018-05-22 14:35:18",
     "containerVersion": {
         "path": "accounts/1816904851/containers/7566974/versions/0",
         "accountId": "1816904851",
@@ -15,21 +15,21 @@
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1525967704250",
+            "fingerprint": "1526999692502",
             "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1816904851/containers/7566974/workspaces?apiLink=container"
         },
         "tag": [
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "tagId": "53",
+                "tagId": "72",
                 "name": "cookiepermission - ask",
                 "type": "html",
                 "parameter": [
                     {
                         "type": "TEMPLATE",
                         "key": "html",
-                        "value": "<script>\n  function setCookie(value, box) {\n    var d = new Date();\n    d.setTime(d.getTime() + ({{cookiepermission - expiry}}*24*60*60*1000));\n    var expires = \"expires=\"+ d.toUTCString();\n    document.cookie = '{{cookiepermission - cookiename}}' + \"=\" + value + \"; \" + expires;\n    \n    // remove box\n    box.style.display = 'none';\n    \n    if (value == \"yes\")\n       dataLayer.push( { event: 'cookiepermission first page yes' } );\n    else\n       dataLayer.push( { event: 'cookiepermission first page no' } );\n    \n  }\n  \n  var txt = \"{{cookiepermission - Pregunta}}\";\n  var cookiepermissionDialogbox = document.createElement(\"div\");\n  cookiepermissionDialogbox.id = 'cp-overlay';\n  cookiepermissionDialogbox.style.position = \"fixed\";\n  cookiepermissionDialogbox.style.bottom = \"0px\";\n//cookiepermissionDialogbox.style.top = \"0px\";\n  cookiepermissionDialogbox.style.width = \"100%\";\n//cookiepermissionDialogbox.style.height = \"0%\";\n  cookiepermissionDialogbox.style.zIndex = \"1000\";\n//cookiepermissionDialogbox.style.zIndex = \"999999\";\n  cookiepermissionDialogbox.style.backgroundColor = \"rgba(0, 0, 0, 0.5)\";\n    \n  cpdiv = document.createElement(\"div\");\n  cpdiv.id = 'cp-inner';\n  cpdiv.style.textAlign = \"center\";\n  cpdiv.style.backgroundColor = \"white\";\n  cpdiv.style.margin = \"auto\";\n  cpdiv.style.width = \"100%\"; // cubre todo el ancho de página - cover all the witdh\n  cpdiv.style.padding = \"10px\"; // ajusta el padding - reduce box size\n  cpdiv.style.opacity = \"0.8\";  // ajusta la opacidad del fondo de la caja - change box opacity\n  \n  cpQuestion = document.createElement(\"p\"); // ajusta el tamaño del texto del mensaje\n  cpQuestion.id = 'cp-question';\n  cpQuestion.style.textAlign = \"center\";\n  cpQuestion.innerHTML = txt;\n  \n  cpOptiondiv = document.createElement(\"div\");\n  cpOptiondiv.id = 'cp-options';\n  cpOptiondiv.style.textAlign = \"center\";\n  \n  cpSep = document.createElement(\"span\");\n  cpSep.class = \"cp-separator\";\n  cpSep.innerHTML = '&nbsp;-&nbsp;';\n\n  cpSep2 = document.createElement(\"span\");\n  cpSep2.class = \"cp-separator2\";\n  cpSep2.innerHTML = '&nbsp;-&nbsp;';\n  \n  cpYes = document.createElement(\"span\");\n  cpYes.id = \"cp-yes\";\n  \n  cpYesA = document.createElement(\"a\");\n  cpYesA.setAttribute(\"href\", \"#\");\n  cpYesA.setAttribute(\"onclick\", \"javascript:setCookie('yes', cookiepermissionDialogbox);\");\n  cpYesA.innerHTML = '{{cookiepermission - texto venga va enchufalas}}';\n  \n  cpNo = document.createElement(\"span\");\n  cpNo.id = \"cp-no\";\n  \n  cpNoA = document.createElement(\"a\");\n  cpNoA.setAttribute(\"href\", \"#\");\n  cpNoA.setAttribute(\"onclick\", \"javascript:setCookie('no', cookiepermissionDialogbox);\");\n  cpNoA.innerHTML = '{{cookiepermission - Texto va a ser que no}}';\n\n  cpPolitica = document.createElement(\"spam\");\n  cpPolitica.id = \"cp-politica\";\n  \n  // Añade el enlace a la página de Politica de Coockies (MODIFICAR LA URL)\n  cpPoliticaA = document.createElement(\"a\");\n  cpPoliticaA.setAttribute(\"href\", \"https://consultoria365.com/politica-de-cookies/\");\n  cpPoliticaA.innerHTML = '{{cookiepermission - Politica de Cookies}}';\n  \n  // insert into body \n  document.body.appendChild(cookiepermissionDialogbox);\n  \n  cookiepermissionDialogbox.appendChild(cpdiv);\n\n  cpdiv.appendChild(cpQuestion);\n  cpdiv.appendChild(cpOptiondiv);\n  cpOptiondiv.appendChild(cpYes);\n  cpOptiondiv.appendChild(cpSep);\n  cpOptiondiv.appendChild(cpNo);\n  cpOptiondiv.appendChild(cpSep2);\n  cpOptiondiv.appendChild(cpPolitica);\n  cpYes.appendChild(cpYesA);\n  cpNo.appendChild(cpNoA);\n  cpPolitica.appendChild(cpPoliticaA);\n  \n</script>\n  "
+                        "value": "<script>\n  function setCookie(value, box) {\n    var d = new Date();\n    d.setTime(d.getTime() + ({{cookiepermission - expiry}}*24*60*60*1000));\n    var expires = \"expires=\"+ d.toUTCString();\n    var path = \"path=/\"\n    document.cookie = '{{cookiepermission - cookiename}}' + \"=\" + value + \"; \" + expires + \"; \" + path;\n    \n    // remove box\n    box.style.display = 'none';\n    \n    if (value == \"yes\")\n       dataLayer.push( { event: 'cookiepermission first page yes' } );\n    else\n       dataLayer.push( { event: 'cookiepermission first page no' } );\n    \n  }\n  \n  var txt = \"{{cookiepermission - Pregunta}}\";\n  var cookiepermissionDialogbox = document.createElement(\"div\");\n  cookiepermissionDialogbox.id = 'cp-overlay';\n  cookiepermissionDialogbox.style.position = \"fixed\";\n  cookiepermissionDialogbox.style.bottom = \"0px\";\n//cookiepermissionDialogbox.style.top = \"0px\";\n  cookiepermissionDialogbox.style.width = \"100%\";\n//cookiepermissionDialogbox.style.height = \"0%\";\n  cookiepermissionDialogbox.style.zIndex = \"1000\";\n//cookiepermissionDialogbox.style.zIndex = \"999999\";\n  cookiepermissionDialogbox.style.backgroundColor = \"rgba(0, 0, 0, 0.5\";\n    \n  cpdiv = document.createElement(\"div\");\n  cpdiv.id = 'cp-inner';\n  cpdiv.style.textAlign = \"center\";\n  cpdiv.style.backgroundColor = \"white\";\n  cpdiv.style.margin = \"auto\";\n  cpdiv.style.width = \"100%\"; // cubre todo el ancho de página - cover all the witdh\n  cpdiv.style.padding = \"10px\"; // ajusta el padding - reduce box size\n  cpdiv.style.opacity = \"0.8\";  // ajusta la opacidad del fondo de la caja - change box opacity\n  \n  cpQuestion = document.createElement(\"p\"); // ajusta el tamaño del texto del mensaje\n  cpQuestion.id = 'cp-question';\n  cpQuestion.style.textAlign = \"center\";\n  cpQuestion.innerHTML = txt;\n  \n  cpOptiondiv = document.createElement(\"div\");\n  cpOptiondiv.id = 'cp-options';\n  cpOptiondiv.style.textAlign = \"center\";\n  \n  cpSep = document.createElement(\"span\");\n  cpSep.class = \"cp-separator\";\n  cpSep.innerHTML = '&nbsp;-&nbsp;';\n\n  cpSep2 = document.createElement(\"span\");\n  cpSep2.class = \"cp-separator2\";\n  cpSep2.innerHTML = '&nbsp;-&nbsp;';\n  \n  cpYes = document.createElement(\"span\");\n  cpYes.id = \"cp-yes\";\n  \n  cpYesA = document.createElement(\"a\");\n  cpYesA.setAttribute(\"href\", \"#\");\n  cpYesA.setAttribute(\"onclick\", \"javascript:setCookie('yes', cookiepermissionDialogbox);\");\n  cpYesA.innerHTML = '{{cookiepermission - texto venga va enchufalas}}';\n  \n  cpNo = document.createElement(\"span\");\n  cpNo.id = \"cp-no\";\n  \n  cpNoA = document.createElement(\"a\");\n  cpNoA.setAttribute(\"href\", \"#\");\n  cpNoA.setAttribute(\"onclick\", \"javascript:setCookie('no', cookiepermissionDialogbox);\");\n  cpNoA.innerHTML = '{{cookiepermission - Texto va a ser que no}}';\n\n  cpPolitica = document.createElement(\"spam\");\n  cpPolitica.id = \"cp-politica\";\n  \n  cpPoliticaA = document.createElement(\"a\");\n  cpPoliticaA.setAttribute(\"href\", \"https://carlosmdh.es/politica-de-cookies/\");\n  cpPoliticaA.innerHTML = '{{cookiepermission - Politica de Cookies}}';\n  \n  // insert into body \n  document.body.appendChild(cookiepermissionDialogbox);\n  \n  cookiepermissionDialogbox.appendChild(cpdiv);\n\n  cpdiv.appendChild(cpQuestion);\n  cpdiv.appendChild(cpOptiondiv);\n  cpOptiondiv.appendChild(cpYes);\n  cpOptiondiv.appendChild(cpSep);\n  cpOptiondiv.appendChild(cpNo);\n  cpOptiondiv.appendChild(cpSep2);\n  cpOptiondiv.appendChild(cpPolitica);\n  cpYes.appendChild(cpYesA);\n  cpNo.appendChild(cpNoA);\n  cpPolitica.appendChild(cpPoliticaA);\n  \n</script>\n  "
                     },
                     {
                         "type": "BOOLEAN",
@@ -37,9 +37,9 @@
                         "value": "false"
                     }
                 ],
-                "fingerprint": "1525973224753",
+                "fingerprint": "1526999337718",
                 "firingTriggerId": [
-                    "157"
+                    "190"
                 ],
                 "parentFolderId": "80",
                 "tagFiringOption": "ONCE_PER_EVENT"
@@ -47,7 +47,7 @@
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "tagId": "54",
+                "tagId": "73",
                 "name": "cookiepermission SAMPLE Tag",
                 "type": "html",
                 "parameter": [
@@ -62,10 +62,10 @@
                         "value": "false"
                     }
                 ],
-                "fingerprint": "1525966656669",
+                "fingerprint": "1526998663788",
                 "firingTriggerId": [
-                    "158",
-                    "155"
+                    "191",
+                    "200"
                 ],
                 "parentFolderId": "80",
                 "tagFiringOption": "ONCE_PER_EVENT"
@@ -75,7 +75,32 @@
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "triggerId": "154",
+                "triggerId": "198",
+                "name": "Conversiones campaña RGPD",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://carlosmdh.es/gracias-rgpd/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1526998663777"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "triggerId": "199",
                 "name": "cookiepermission - firstpage no",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
@@ -95,13 +120,13 @@
                         ]
                     }
                 ],
-                "fingerprint": "1525966656662",
+                "fingerprint": "1526998663777",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "triggerId": "155",
+                "triggerId": "200",
                 "name": "cookiepermission - firstpage yes",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
@@ -121,13 +146,13 @@
                         ]
                     }
                 ],
-                "fingerprint": "1525966656663",
+                "fingerprint": "1526998663778",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "triggerId": "156",
+                "triggerId": "189",
                 "name": "cookiepermission - no",
                 "type": "PAGEVIEW",
                 "filter": [
@@ -147,13 +172,13 @@
                         ]
                     }
                 ],
-                "fingerprint": "1525966656664",
+                "fingerprint": "1526979157393",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "triggerId": "157",
+                "triggerId": "190",
                 "name": "cookiepermission - unknown",
                 "type": "PAGEVIEW",
                 "filter": [
@@ -178,13 +203,13 @@
                         ]
                     }
                 ],
-                "fingerprint": "1525966656664",
+                "fingerprint": "1526979157393",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "triggerId": "158",
+                "triggerId": "191",
                 "name": "cookiepermission - yes",
                 "type": "PAGEVIEW",
                 "filter": [
@@ -204,7 +229,7 @@
                         ]
                     }
                 ],
-                "fingerprint": "1525966656665",
+                "fingerprint": "1526979157394",
                 "parentFolderId": "80"
             }
         ],
@@ -212,7 +237,62 @@
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "47",
+                "variableId": "81",
+                "name": "Propiedad de Google Analytics",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "UA-116235922-1"
+                    }
+                ],
+                "fingerprint": "1526998663781"
+            },
+            {
+                "accountId": "1816904851",
+                "containerId": "7566974",
+                "variableId": "82",
                 "name": "cookiepermission - Acepta",
                 "type": "c",
                 "parameter": [
@@ -222,29 +302,29 @@
                         "value": "Acepto"
                     }
                 ],
-                "fingerprint": "1525966656665",
+                "fingerprint": "1526998663781",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "48",
+                "variableId": "83",
                 "name": "cookiepermission - No acepta",
                 "type": "c",
                 "parameter": [
                     {
                         "type": "TEMPLATE",
                         "key": "value",
-                        "value": "No acepto"
+                        "value": "No Acepto"
                     }
                 ],
-                "fingerprint": "1525966656666",
+                "fingerprint": "1526998663782",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "49",
+                "variableId": "84",
                 "name": "cookiepermission - Politica de Cookies",
                 "type": "c",
                 "parameter": [
@@ -254,29 +334,29 @@
                         "value": "Política de Cookies"
                     }
                 ],
-                "fingerprint": "1525973361850",
-                "parentFolderId": "80"
+                "fingerprint": "1526998663782"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "50",
+                "variableId": "85",
                 "name": "cookiepermission - Pregunta",
                 "type": "c",
                 "parameter": [
                     {
                         "type": "TEMPLATE",
                         "key": "value",
-                        "value": "Utilizamos cookies de terceros, de servicios de análisis, afiliación o redes sociales. Si continua navegando, acepta su uso. Puede cambiar la configuración u obtener más información consultando la Política de Cookies"
+                        "value": "Utilizo cookies de terceros, de servicios de análisis, afiliación o redes sociales. Si continuas navegando, aceptas su uso. Puedes cambiar la configuración u obtener más información consultando la Política de Cookies"
                     }
                 ],
-                "fingerprint": "1525966656666",
-                "parentFolderId": "80"
+                "fingerprint": "1526998663783",
+                "parentFolderId": "80",
+                "formatValue": {}
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "51",
+                "variableId": "86",
                 "name": "cookiepermission - Texto pregunta",
                 "type": "c",
                 "parameter": [
@@ -286,13 +366,13 @@
                         "value": "Utilizamos cookies de terceros, de servicios de análisis, afiliación o redes sociales. Si continua navegando, acepta su uso. Puede cambiar la configuración u obtener más información consultando la Política de Cookies"
                     }
                 ],
-                "fingerprint": "1525966656666",
+                "fingerprint": "1526998663784",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "52",
+                "variableId": "87",
                 "name": "cookiepermission - Texto va a ser que no",
                 "type": "c",
                 "parameter": [
@@ -302,13 +382,13 @@
                         "value": "No acepto"
                     }
                 ],
-                "fingerprint": "1525966656667",
+                "fingerprint": "1526998663784",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "45",
+                "variableId": "75",
                 "name": "cookiepermission - content",
                 "type": "k",
                 "parameter": [
@@ -323,13 +403,13 @@
                         "value": "{{cookiepermission - cookiename}}"
                     }
                 ],
-                "fingerprint": "1525966656664",
+                "fingerprint": "1526979157392",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "44",
+                "variableId": "74",
                 "name": "cookiepermission - cookiename",
                 "type": "c",
                 "parameter": [
@@ -339,13 +419,13 @@
                         "value": "cookiepermission"
                     }
                 ],
-                "fingerprint": "1525966656663",
+                "fingerprint": "1526979157391",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "53",
+                "variableId": "76",
                 "name": "cookiepermission - expiry",
                 "type": "c",
                 "parameter": [
@@ -355,13 +435,13 @@
                         "value": "365"
                     }
                 ],
-                "fingerprint": "1525973385650",
+                "fingerprint": "1526979157394",
                 "parentFolderId": "80"
             },
             {
                 "accountId": "1816904851",
                 "containerId": "7566974",
-                "variableId": "54",
+                "variableId": "88",
                 "name": "cookiepermission - texto venga va enchufalas",
                 "type": "c",
                 "parameter": [
@@ -371,7 +451,7 @@
                         "value": "Acepto"
                     }
                 ],
-                "fingerprint": "1525966656667",
+                "fingerprint": "1526998663785",
                 "parentFolderId": "80"
             }
         ],
