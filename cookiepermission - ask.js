@@ -74,7 +74,7 @@
   cpPolitica.id = "cp-politica";
   
   cpPoliticaA = document.createElement("a");
-  cpPoliticaA.setAttribute("href", "https://carlosmdh.es/politica-de-cookies/");
+  cpPoliticaA.setAttribute("href", "AQUÍ VA LA URL DE TU POLÍTICA DE PRIVACIDAD");
   cpPoliticaA.innerHTML = '{{cookiepermission - Politica de Cookies}}';
   
   // insert into body 
